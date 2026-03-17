@@ -242,6 +242,243 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.home-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  padding-bottom: 60px;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* Full-bleed background image wrapper */
+.home-hero-section .hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.home-hero-section .hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Gradient scrim overlay for text legibility */
+.home-hero-section .hero-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(110deg, rgba(31,42,35,0.78) 0%, rgba(31,42,35,0.65) 40%, rgba(31,42,35,0.35) 70%, rgba(31,42,35,0.15) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content wrapper: START-aligned with safe margins */
+.home-hero-section .hero-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Frosted overlay card */
+.home-hero-section .hero-overlay-card {
+  position: relative;
+  max-width: 580px;
+  background: rgba(243,237,226,0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 48px 40px;
+  box-shadow: 0 18px 34px rgba(41,33,21,0.20), 0 0 1px rgba(47,42,35,0.15);
+  border: 1px solid var(--border-light);
+  color: var(--text-dark);
+}
+
+/* Embossed corner flourish (END corner) */
+.home-hero-section .card-flourish {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  color: var(--primary);
+  pointer-events: none;
+}
+
+/* Typography inside card */
+.home-hero-section .hero-overlay-card h1 {
+  font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--text-dark);
+  margin: 0 0 20px 0;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+
+.home-hero-section .hero-overlay-card h3 {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin: 0 0 32px 0;
+  opacity: 0.92;
+}
+
+/* CTA row: horizontal on desktop, stacked on mobile */
+.home-hero-section .hero-cta-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.home-hero-section .btn-primary,
+.home-hero-section .btn-secondary {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 8px 18px rgba(41,33,21,0.16);
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+  cursor: pointer;
+}
+
+.home-hero-section .btn-primary {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+.home-hero-section .btn-primary:hover {
+  background: #3C7B4D;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(41,33,21,0.22);
+}
+
+.home-hero-section .btn-secondary {
+  background: var(--accent);
+  color: #FFFFFF;
+}
+
+.home-hero-section .btn-secondary:hover {
+  background: #D6902B;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(217,144,43,0.22);
+}
+
+/* Trust row: compact metadata line */
+.home-hero-section .trust-row {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
+/* Bottom divider wrapper */
+.home-hero-section .home-hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.home-hero-section .home-hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .home-hero-section {
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+
+  .home-hero-section .hero-content-wrapper {
+    padding: 100px 16px 0 16px;
+    min-height: calc(100vh - 60px);
+  }
+
+  .home-hero-section .hero-overlay-card {
+    max-width: 100%;
+    padding: 32px 24px;
+    border-radius: 12px;
+  }
+
+  .home-hero-section .card-flourish {
+    width: 80px;
+    height: 80px;
+  }
+
+  .home-hero-section .hero-overlay-card h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .home-hero-section .hero-overlay-card h3 {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .home-hero-section .hero-cta-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .home-hero-section .btn-primary,
+  .home-hero-section .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+  }
+
+  .home-hero-section .trust-row {
+    font-size: 11px;
+    padding-top: 12px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -781,32 +1018,44 @@
 </script>
   
   <main>
-    <section id="hero" class="home-hero-section" data-layout-spec="Home-hero" data-hero-type="fullscreen-scrim" style="">
-  <div class="home-hero-section__bg-wrapper" style="">
-    <div data-zappy-zoom-wrapper="true" data-element-id="img-1773707290096-68ypu7hck" data-element-type="image" data-zappy-zoom-wrapper-width="1861px" data-zappy-zoom-wrapper-height="931px" data-zappy-zoom-wrapper-width-mode="full" style="position: absolute !important; overflow: hidden !important; width: 1861px !important; max-width: 100% !important; margin-left: 0px !important; margin-right: 0px !important; height: 931px !important; display: block !important; top: 0px !important; left: 0px !important; z-index: 1 !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img data-hero-bg="true" data-placeholder="home-hero-bg" data-context="Golden hour landscape photography of vacant land in the United States, wide open field with native grasses gently swaying, distant horizon line with warm sky, wooden fence posts visible in foreground, soft natural lighting, peaceful and inviting atmosphere, professional real estate photography, high quality, warm earth tones" width="1920" height="1080" src="/assets/site-home-hero-bg-1773707806402-y152o9.webp?v=1773707807957" alt="Open land at golden hour" class="home-hero-section__bg-image zappy-editable-image" data-preserve-bg="0" data-element-type="image" data-element-id="img-1773707290096-68ypu7hck" data-resize-handler-attached="true" style="object-position: 50% 50%; margin: 0px !important; position: absolute !important; left: 0% !important; top: -6.70941% !important; width: 100%; height: 100%; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover;" data-zappy-zoom="1" data-zappy-original-width="1861" data-zappy-original-height="931"></div>
+    <section class="home-hero-section" data-layout-spec="Home-hero" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="hero">
+  <!-- Full-bleed background image -->
+  <div class="hero-bg-wrapper">
+    <div class="hero-bg-image" role="img" aria-label="Open land at golden hour" style="background-image: url('assets/site-home-hero-bg-1773707806402-y152o9.webp?v=1773707807957');  background-size: cover; background-position: center;"></div>
   </div>
-  <div class="home-hero-section__scrim" aria-hidden="true" data-zappy-gradient-scrim="true" style=""></div>
-  <div class="home-hero-section__content-wrapper">
-    <div class="home-hero-section__overlay-card">
-      <div class="home-hero-section__flourish" aria-hidden="true">
-        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
-          <path d="M10,60 Q30,20 60,30 T110,60 Q90,80 70,75 T10,60 Z" fill="currentColor" opacity="0.06"></path>
-        </svg>
+
+  <!-- Gradient scrim overlay for text legibility -->
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <!-- Text overlay card (START-aligned, vertically centered) -->
+  <div class="hero-content-wrapper">
+    <div class="hero-overlay-card">
+      <!-- Subtle embossed corner flourish (END corner) -->
+      <svg class="card-flourish" data-no-icon-edit="true" aria-hidden="true" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M120,0 Q95,15 80,30 T50,60 Q35,75 20,95 T0,120 L120,120 Z" fill="currentColor" opacity="0.04"></path>
+      </svg>
+
+      <h1>Make land ownership simple—anywhere in the U.S.</h1>
+      <h3>Transparent listings, straightforward terms, and flexible seller financing designed for real people.</h3>
+      
+      <div class="hero-cta-row">
+        
+        <a href="#contact" class="btn-secondary">Get financing details</a>
       </div>
-      <h1 class="home-hero-section__headline">Make land ownership simple—anywhere in the U.S.</h1>
-      <h3 class="home-hero-section__subtitle">Transparent listings, straightforward terms, and flexible seller financing designed for real people.</h3>
-      <div class="home-hero-section__cta-row">
-        <a href="#contact" class="home-hero-section__btn home-hero-section__btn--primary" data-element-type="button" data-element-id="btn-1773707290093-9ff73v82s" data-native-element="true">View available land</a>
-        <a href="#contact" class="home-hero-section__btn home-hero-section__btn--secondary" data-element-type="button" data-element-id="btn-1773707290093-fg6qbh8er" data-native-element="true">Get financing details</a>
-      </div>
-      <p class="home-hero-section__trust-row">Nationwide opportunities • Clear pricing • No-pressure guidance</p>
+
+      <p class="trust-row">Nationwide opportunities • Clear pricing • No-pressure guidance</p>
     </div>
   </div>
-  <div class="home-hero-section__divider-wrapper">
+
+  <!-- Bottom divider: soft contour-line ridge (topographic style) -->
+  <div class="home-hero-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,60 L0,42 Q100,38 200,42 T400,38 Q500,42 600,38 T800,42 Q900,38 1000,42 T1200,38 L1200,60 Z" fill="#1F2A23" opacity="0.3"></path>
-      <path d="M0,60 L0,48 Q100,44 200,48 T400,44 Q500,48 600,44 T800,48 Q900,44 1000,48 T1200,44 L1200,60 Z" fill="#1F2A23" opacity="0.5"></path>
-      <path d="M0,60 L0,54 Q100,50 200,54 T400,50 Q500,54 600,50 T800,54 Q900,50 1000,54 T1200,50 L1200,60 Z" fill="#1F2A23"></path>
+      <!-- Base fill matching next section (light) -->
+      <path d="M0,60 L0,35 Q100,32 200,35 T400,32 Q500,35 600,32 T800,35 Q900,32 1000,35 T1200,32 L1200,60 Z" fill="#1F2A23"></path>
+      <!-- Contour lines (topographic ridges) -->
+      <path d="M0,35 Q100,32 200,35 T400,32 Q500,35 600,32 T800,35 Q900,32 1000,35 T1200,32" stroke="var(--border-light)" stroke-width="0.8" fill="#1F2A23" opacity="0.4"></path>
+      <path d="M0,42 Q120,39 240,42 T480,39 Q600,42 720,39 T960,42 Q1080,39 1200,42" stroke="var(--border-light)" stroke-width="0.6" fill="#1F2A23" opacity="0.25"></path>
+      <path d="M0,48 Q150,46 300,48 T600,46 Q750,48 900,46 T1200,48" stroke="var(--border-light)" stroke-width="0.5" fill="#1F2A23" opacity="0.15"></path>
     </svg>
   </div>
 </section>
@@ -1149,34 +1398,6 @@
       if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileLangMenu); }
       else { initMobileLangMenu(); }
       window.addEventListener('resize', function() { clearTimeout(window._mlrt); window._mlrt = setTimeout(initMobileLangMenu, 250); });
-    })();
-    </script>
-
-    <script>
-    (function(){
-      if(window.innerWidth>768)return;
-      function fixZW(){
-        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
-          var cw=w.style.getPropertyValue('width');
-          if(!cw||cw==='100%')return;
-          w.style.setProperty('width','100%','important');
-          w.style.setProperty('max-width','100%','important');
-          w.style.setProperty('height','auto','important');
-          var img=w.querySelector('img');
-          if(img){
-            img.style.setProperty('position','relative','important');
-            img.style.setProperty('width','100%','important');
-            img.style.setProperty('height','auto','important');
-            img.style.setProperty('max-width','100%','important');
-            img.style.setProperty('max-height','400px','important');
-            img.style.setProperty('object-fit','cover','important');
-            img.style.setProperty('left','0','important');
-            img.style.setProperty('top','0','important');
-          }
-        });
-      }
-      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fixZW);
-      else setTimeout(fixZW,50);
     })();
     </script>
 </body>

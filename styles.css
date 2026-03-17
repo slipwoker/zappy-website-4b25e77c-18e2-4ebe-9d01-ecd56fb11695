@@ -4450,6 +4450,286 @@ body.accessibility-widget-visible ._access-menu {
 /* /Zappy custom logo size */
 
 
+/* Added Component Styles */
+/* Header Section Styles */
+.header-section {
+  width: 100%;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  direction: rtl;
+  font-family: Manrope, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.site-header {
+  width: 100%;
+  padding: 0;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Logo Styles */
+.header-logo {
+  flex-shrink: 0;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+  max-width: 200px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Desktop Navigation */
+.header-nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: var(--primary, #2E6B3D);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary, #2E6B3D);
+  transition: all 0.3s ease;
+  transform: translateX(50%);
+}
+
+.nav-link:hover {
+  background: rgba(46, 107, 61, 0.1);
+  color: var(--primary, #2E6B3D);
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+.nav-link:focus {
+  outline: 2px solid var(--primary, #2E6B3D);
+  outline-offset: 2px;
+}
+
+.nav-link:active {
+  transform: translateY(1px);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+.mobile-menu-toggle:focus {
+  outline: 2px solid var(--primary, #2E6B3D);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background: var(--primary, #2E6B3D);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-top: 1px solid rgba(46, 107, 61, 0.2);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.mobile-nav.active {
+  max-height: 400px;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobile-nav-item {
+  width: 100%;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 1rem;
+  color: var(--primary, #2E6B3D);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: right;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+  background: rgba(46, 107, 61, 0.15);
+  transform: translateX(-4px);
+}
+
+.mobile-nav-link:focus {
+  outline: 2px solid var(--primary, #2E6B3D);
+  outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav-link {
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .logo-image {
+    height: 40px;
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo-image {
+    height: 36px;
+    max-width: 140px;
+  }
+
+  .mobile-nav-list {
+    padding: 1rem;
+  }
+
+  .mobile-nav-link {
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .mobile-nav-link,
+  .logo-image,
+  .hamburger-line,
+  .mobile-menu-toggle,
+  .mobile-nav {
+    transition: none;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .nav-link,
+  .mobile-nav-link {
+    border: 1px solid currentColor;
+  }
+  
+  .header-section {
+    border-bottom: 2px solid var(--primary, #2E6B3D);
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
